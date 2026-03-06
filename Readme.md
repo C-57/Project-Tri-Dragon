@@ -31,10 +31,10 @@ The goal of this project was to simulate a high-fidelity orbital environment to 
 
 
 
-* /data       : Contains the CSV files for the three "Dragons".
-* /python\_file: The main Python engine (TriDrag.py) for analysis and plotting.
-* /gmat\_model : The original .script file used to generate the data.
-* /output     : Plots of Orbital View, Ground Track, Satellite Orbit Visualization (ECI frame) and Inter-Satellite Distance Analysis.
+* /data         : Contains the CSV files for the three "Dragons".
+* /TriDrag.py   : The Python engine for analysis and plotting.
+* /gmat\_script : The original .script file used to generate the data.
+* /output       : Plots of Orbital View, Ground Track, Satellite Orbit Visualization (ECI frame) and Inter-Satellite Distance Analysis.
 
 
 
@@ -53,4 +53,5 @@ Observation: Because of the staggered RAAN and differing inclinations, these sat
 
 
 #Clement\_Davis
+
 
