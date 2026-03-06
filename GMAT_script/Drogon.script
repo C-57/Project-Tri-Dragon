@@ -1,0 +1,318 @@
+%General Mission Analysis Tool(GMAT) Script
+%Created: 2026-03-05 00:13:50
+
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft Drogon;
+Drogon.DateFormat = TAIModJulian;
+Drogon.Epoch = '21545';
+Drogon.CoordinateSystem = EarthMJ2000Eq;
+Drogon.DisplayStateType = Keplerian;
+Drogon.SMA = 6871.000000000002;
+Drogon.ECC = 2.449640607037636e-16;
+Drogon.INC = 45.00000000000001;
+Drogon.RAAN = 0;
+Drogon.AOP = 0;
+Drogon.TA = 0;
+Drogon.DryMass = 850;
+Drogon.Cd = 2.2;
+Drogon.Cr = 1.8;
+Drogon.DragArea = 15;
+Drogon.SRPArea = 1;
+Drogon.SPADDragScaleFactor = 1;
+Drogon.SPADSRPScaleFactor = 1;
+Drogon.AtmosDensityScaleFactor = 1;
+Drogon.ExtendedMassPropertiesModel = 'None';
+Drogon.NAIFId = -10000001;
+Drogon.NAIFIdReferenceFrame = -9000001;
+Drogon.OrbitColor = Red;
+Drogon.TargetColor = Teal;
+Drogon.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+Drogon.CdSigma = 1e+70;
+Drogon.CrSigma = 1e+70;
+Drogon.Id = 'SatId';
+Drogon.Attitude = CoordinateSystemFixed;
+Drogon.SPADSRPInterpolationMethod = Bilinear;
+Drogon.SPADSRPScaleFactorSigma = 1e+70;
+Drogon.SPADDragInterpolationMethod = Bilinear;
+Drogon.SPADDragScaleFactorSigma = 1e+70;
+Drogon.AtmosDensityScaleFactorSigma = 1e+70;
+Drogon.ModelFile = 'aura.3ds';
+Drogon.ModelOffsetX = 0;
+Drogon.ModelOffsetY = 0;
+Drogon.ModelOffsetZ = 0;
+Drogon.ModelRotationX = 0;
+Drogon.ModelRotationY = 0;
+Drogon.ModelRotationZ = 0;
+Drogon.ModelScale = 1;
+Drogon.AttitudeDisplayStateType = 'Quaternion';
+Drogon.AttitudeRateDisplayStateType = 'AngularVelocity';
+Drogon.AttitudeCoordinateSystem = EarthMJ2000Eq;
+Drogon.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft Rhaegal;
+Rhaegal.DateFormat = TAIModJulian;
+Rhaegal.Epoch = '21545';
+Rhaegal.CoordinateSystem = EarthMJ2000Eq;
+Rhaegal.DisplayStateType = Keplerian;
+Rhaegal.SMA = 6871.014553926347;
+Rhaegal.ECC = 6.95153706690073e-17;
+Rhaegal.INC = 29.99999999999999;
+Rhaegal.RAAN = 120;
+Rhaegal.AOP = 0;
+Rhaegal.TA = 0;
+Rhaegal.DryMass = 850;
+Rhaegal.Cd = 2.2;
+Rhaegal.Cr = 1.8;
+Rhaegal.DragArea = 15;
+Rhaegal.SRPArea = 1;
+Rhaegal.SPADDragScaleFactor = 1;
+Rhaegal.SPADSRPScaleFactor = 1;
+Rhaegal.AtmosDensityScaleFactor = 1;
+Rhaegal.ExtendedMassPropertiesModel = 'None';
+Rhaegal.NAIFId = -10000001;
+Rhaegal.NAIFIdReferenceFrame = -9000001;
+Rhaegal.OrbitColor = [247 235 9];
+Rhaegal.TargetColor = Teal;
+Rhaegal.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+Rhaegal.CdSigma = 1e+70;
+Rhaegal.CrSigma = 1e+70;
+Rhaegal.Id = 'SatId';
+Rhaegal.Attitude = CoordinateSystemFixed;
+Rhaegal.SPADSRPInterpolationMethod = Bilinear;
+Rhaegal.SPADSRPScaleFactorSigma = 1e+70;
+Rhaegal.SPADDragInterpolationMethod = Bilinear;
+Rhaegal.SPADDragScaleFactorSigma = 1e+70;
+Rhaegal.AtmosDensityScaleFactorSigma = 1e+70;
+Rhaegal.ModelFile = 'aura.3ds';
+Rhaegal.ModelOffsetX = 0;
+Rhaegal.ModelOffsetY = 0;
+Rhaegal.ModelOffsetZ = 0;
+Rhaegal.ModelRotationX = 0;
+Rhaegal.ModelRotationY = 0;
+Rhaegal.ModelRotationZ = 0;
+Rhaegal.ModelScale = 1;
+Rhaegal.AttitudeDisplayStateType = 'Quaternion';
+Rhaegal.AttitudeRateDisplayStateType = 'AngularVelocity';
+Rhaegal.AttitudeCoordinateSystem = EarthMJ2000Eq;
+Rhaegal.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft Viserion;
+Viserion.DateFormat = TAIModJulian;
+Viserion.Epoch = '21545';
+Viserion.CoordinateSystem = EarthMJ2000Eq;
+Viserion.DisplayStateType = Keplerian;
+Viserion.SMA = 6871.01455392635;
+Viserion.ECC = 1.273185296877112e-16;
+Viserion.INC = 59.99999999999999;
+Viserion.RAAN = 240;
+Viserion.AOP = 0;
+Viserion.TA = 0;
+Viserion.DryMass = 850;
+Viserion.Cd = 2.2;
+Viserion.Cr = 1.8;
+Viserion.DragArea = 15;
+Viserion.SRPArea = 1;
+Viserion.SPADDragScaleFactor = 1;
+Viserion.SPADSRPScaleFactor = 1;
+Viserion.AtmosDensityScaleFactor = 1;
+Viserion.ExtendedMassPropertiesModel = 'None';
+Viserion.NAIFId = -10000001;
+Viserion.NAIFIdReferenceFrame = -9000001;
+Viserion.OrbitColor = [14 241 236];
+Viserion.TargetColor = Teal;
+Viserion.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+Viserion.CdSigma = 1e+70;
+Viserion.CrSigma = 1e+70;
+Viserion.Id = 'SatId';
+Viserion.Attitude = CoordinateSystemFixed;
+Viserion.SPADSRPInterpolationMethod = Bilinear;
+Viserion.SPADSRPScaleFactorSigma = 1e+70;
+Viserion.SPADDragInterpolationMethod = Bilinear;
+Viserion.SPADDragScaleFactorSigma = 1e+70;
+Viserion.AtmosDensityScaleFactorSigma = 1e+70;
+Viserion.ModelFile = 'aura.3ds';
+Viserion.ModelOffsetX = 0;
+Viserion.ModelOffsetY = 0;
+Viserion.ModelOffsetZ = 0;
+Viserion.ModelRotationX = 0;
+Viserion.ModelRotationY = 0;
+Viserion.ModelRotationZ = 0;
+Viserion.ModelScale = 1;
+Viserion.AttitudeDisplayStateType = 'Quaternion';
+Viserion.AttitudeRateDisplayStateType = 'AngularVelocity';
+Viserion.AttitudeCoordinateSystem = EarthMJ2000Eq;
+Viserion.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel Propagator1_ForceModel;
+Propagator1_ForceModel.CentralBody = Earth;
+Propagator1_ForceModel.PrimaryBodies = {Earth};
+Propagator1_ForceModel.Drag = None;
+Propagator1_ForceModel.SRP = Off;
+Propagator1_ForceModel.RelativisticCorrection = Off;
+Propagator1_ForceModel.ErrorControl = RSSStep;
+Propagator1_ForceModel.GravityField.Earth.Degree = 4;
+Propagator1_ForceModel.GravityField.Earth.Order = 4;
+Propagator1_ForceModel.GravityField.Earth.StmLimit = 100;
+Propagator1_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+Propagator1_ForceModel.GravityField.Earth.TideModel = 'None';
+
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel DefaultProp_ForceModel;
+DefaultProp_ForceModel.CentralBody = Earth;
+DefaultProp_ForceModel.PrimaryBodies = {Earth};
+DefaultProp_ForceModel.Drag = None;
+DefaultProp_ForceModel.SRP = Off;
+DefaultProp_ForceModel.RelativisticCorrection = Off;
+DefaultProp_ForceModel.ErrorControl = RSSStep;
+DefaultProp_ForceModel.GravityField.Earth.Degree = 2;
+DefaultProp_ForceModel.GravityField.Earth.Order = 0;
+DefaultProp_ForceModel.GravityField.Earth.StmLimit = 100;
+DefaultProp_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+DefaultProp_ForceModel.GravityField.Earth.TideModel = 'None';
+
+%----------------------------------------
+%---------- Propagators
+%----------------------------------------
+
+Create Propagator DefaultProp;
+DefaultProp.FM = DefaultProp_ForceModel;
+DefaultProp.Type = RungeKutta89;
+DefaultProp.InitialStepSize = 60;
+DefaultProp.Accuracy = 9.999999999999999e-12;
+DefaultProp.MinStep = 0.001;
+DefaultProp.MaxStep = 2700;
+DefaultProp.MaxStepAttempts = 50;
+DefaultProp.StopIfAccuracyIsViolated = true;
+
+%----------------------------------------
+%---------- Subscribers
+%----------------------------------------
+
+Create OrbitView DefaultOrbitView;
+DefaultOrbitView.SolverIterations = Current;
+DefaultOrbitView.UpperLeft = [ 0.03583333333333334 0.001955671447196871 ];
+DefaultOrbitView.Size = [ 0.52125 0.4498044328552803 ];
+DefaultOrbitView.RelativeZOrder = 667;
+DefaultOrbitView.Maximized = true;
+DefaultOrbitView.Add = {Drogon, Rhaegal, Viserion, Earth};
+DefaultOrbitView.CoordinateSystem = EarthMJ2000Eq;
+DefaultOrbitView.DrawObject = [ true true true true ];
+DefaultOrbitView.DataCollectFrequency = 1;
+DefaultOrbitView.UpdatePlotFrequency = 50;
+DefaultOrbitView.NumPointsToRedraw = 0;
+DefaultOrbitView.ShowPlot = true;
+DefaultOrbitView.MaxPlotPoints = 20000;
+DefaultOrbitView.ShowLabels = true;
+DefaultOrbitView.ViewPointReference = Earth;
+DefaultOrbitView.ViewPointVector = [ 30000 0 0 ];
+DefaultOrbitView.ViewDirection = Earth;
+DefaultOrbitView.ViewScaleFactor = 1;
+DefaultOrbitView.ViewUpCoordinateSystem = EarthMJ2000Eq;
+DefaultOrbitView.ViewUpAxis = Z;
+DefaultOrbitView.EclipticPlane = Off;
+DefaultOrbitView.XYPlane = On;
+DefaultOrbitView.WireFrame = Off;
+DefaultOrbitView.Axes = On;
+DefaultOrbitView.Grid = Off;
+DefaultOrbitView.SunLine = Off;
+DefaultOrbitView.UseInitialView = On;
+DefaultOrbitView.StarCount = 7000;
+DefaultOrbitView.EnableStars = On;
+DefaultOrbitView.EnableConstellations = On;
+
+Create GroundTrackPlot DefaultGroundTrackPlot;
+DefaultGroundTrackPlot.SolverIterations = Current;
+DefaultGroundTrackPlot.UpperLeft = [ 0.0425 0.5013037809647979 ];
+DefaultGroundTrackPlot.Size = [ 0.52125 0.4498044328552803 ];
+DefaultGroundTrackPlot.RelativeZOrder = 671;
+DefaultGroundTrackPlot.Maximized = true;
+DefaultGroundTrackPlot.Add = {Drogon, Rhaegal, Viserion};
+DefaultGroundTrackPlot.DataCollectFrequency = 1;
+DefaultGroundTrackPlot.UpdatePlotFrequency = 50;
+DefaultGroundTrackPlot.NumPointsToRedraw = 0;
+DefaultGroundTrackPlot.ShowPlot = true;
+DefaultGroundTrackPlot.MaxPlotPoints = 20000;
+DefaultGroundTrackPlot.CentralBody = Earth;
+DefaultGroundTrackPlot.TextureMap = 'ModifiedBlueMarble.jpg';
+
+Create ReportFile Drogon_Report;
+Drogon_Report.SolverIterations = Current;
+Drogon_Report.UpperLeft = [ 0.08041666666666666 0.1258148631029987 ];
+Drogon_Report.Size = [ 0.5983333333333334 0.7972620599739244 ];
+Drogon_Report.RelativeZOrder = 117;
+Drogon_Report.Maximized = false;
+Drogon_Report.Filename = 'Drogon_Report.txt';
+Drogon_Report.Precision = 16;
+Drogon_Report.Add = {Drogon.A1ModJulian, Drogon.EarthMJ2000Eq.X, Drogon.EarthMJ2000Eq.Y, Drogon.EarthMJ2000Eq.Z, Drogon.EarthMJ2000Eq.VX, Drogon.EarthMJ2000Eq.VY, Drogon.EarthMJ2000Eq.VZ};
+Drogon_Report.WriteHeaders = true;
+Drogon_Report.LeftJustify = On;
+Drogon_Report.ZeroFill = Off;
+Drogon_Report.FixedWidth = true;
+Drogon_Report.Delimiter = ' ';
+Drogon_Report.ColumnWidth = 23;
+Drogon_Report.WriteReport = true;
+Drogon_Report.AppendToExistingFile = false;
+
+Create ReportFile Rhaegal_Report;
+Rhaegal_Report.SolverIterations = Current;
+Rhaegal_Report.UpperLeft = [ -0.02583333333333333 0.04628422425032595 ];
+Rhaegal_Report.Size = [ 0.5991666666666666 0.7985658409387223 ];
+Rhaegal_Report.RelativeZOrder = 563;
+Rhaegal_Report.Maximized = false;
+Rhaegal_Report.Filename = 'ReportFile2.txt';
+Rhaegal_Report.Precision = 16;
+Rhaegal_Report.Add = {Rhaegal.A1ModJulian, Rhaegal.EarthMJ2000Eq.X, Rhaegal.EarthMJ2000Eq.Y, Rhaegal.EarthMJ2000Eq.Z, Rhaegal.EarthMJ2000Eq.VX, Rhaegal.EarthMJ2000Eq.VY, Rhaegal.EarthMJ2000Eq.VZ};
+Rhaegal_Report.WriteHeaders = true;
+Rhaegal_Report.LeftJustify = On;
+Rhaegal_Report.ZeroFill = Off;
+Rhaegal_Report.FixedWidth = true;
+Rhaegal_Report.Delimiter = ' ';
+Rhaegal_Report.ColumnWidth = 23;
+Rhaegal_Report.WriteReport = true;
+Rhaegal_Report.AppendToExistingFile = false;
+
+Create ReportFile Viserion_Report;
+Viserion_Report.SolverIterations = Current;
+Viserion_Report.UpperLeft = [ 0 0 ];
+Viserion_Report.Size = [ 0.5970833333333333 0.7953063885267275 ];
+Viserion_Report.RelativeZOrder = 597;
+Viserion_Report.Maximized = false;
+Viserion_Report.Filename = 'ReportFile1.txt';
+Viserion_Report.Precision = 16;
+Viserion_Report.Add = {Viserion.A1ModJulian, Viserion.EarthMJ2000Eq.X, Viserion.EarthMJ2000Eq.Y, Viserion.EarthMJ2000Eq.Z, Viserion.EarthMJ2000Eq.VX, Viserion.EarthMJ2000Eq.VY, Viserion.EarthMJ2000Eq.VZ};
+Viserion_Report.WriteHeaders = true;
+Viserion_Report.LeftJustify = On;
+Viserion_Report.ZeroFill = Off;
+Viserion_Report.FixedWidth = true;
+Viserion_Report.Delimiter = ' ';
+Viserion_Report.ColumnWidth = 23;
+Viserion_Report.WriteReport = true;
+Viserion_Report.AppendToExistingFile = false;
+
+
+%----------------------------------------
+%---------- Mission Sequence
+%----------------------------------------
+
+BeginMissionSequence;
+Propagate DefaultProp(Drogon, Rhaegal, Viserion) {Drogon.ElapsedSecs = 86400};
